@@ -36,10 +36,6 @@ header a, a:visited {
 }
 */
 
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
-}
 @-webkit-keyframes move-twink-back {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
@@ -52,11 +48,15 @@ header a, a:visited {
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
 }
-
-@keyframes move-clouds-back {
+@-o-keyframes move-twink-back {
     from {background-position:0 0;}
-    to {background-position:10000px 0;}
+    to {background-position:-10000px 5000px;}
 }
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
 @-webkit-keyframes move-clouds-back {
     from {background-position:0 0;}
     to {background-position:10000px 0;}
@@ -67,6 +67,14 @@ header a, a:visited {
 }
 @-ms-keyframes move-clouds-back {
     from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+@-o-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
     to {background-position:10000px 0;}
 }
 
@@ -90,20 +98,20 @@ header a, a:visited {
   background:transparent url(images/twinkling.png) repeat top center;
   z-index:-2;
 
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 1000s linear infinite;
+  -moz-animation:move-twink-back 1000s linear infinite;
+  -ms-animation:move-twink-back 1000s linear infinite;
+  -o-animation:move-twink-back 1000s linear infinite;
+  animation:move-twink-back 1000s linear infinite;
 }
 
 .clouds{
     background:transparent url(images/clouds3.png) repeat top center;
     z-index:-1;
 
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
-  animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 1000s linear infinite;
+  -moz-animation:move-clouds-back 1000s linear infinite;
+  -ms-animation:move-clouds-back 1000s linear infinite;
+  -o-animation:move-clouds-back 1000s linear infinite;
+  animation:move-clouds-back 1000s linear infinite;
 }

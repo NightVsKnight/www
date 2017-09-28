@@ -1,0 +1,76 @@
+
+* {
+  font-family: "Courier New";
+  font-size: 13px;
+  color: lightcyan;
+}
+a {
+  color: turquoise;
+}
+a:link {
+  color: turquoise;
+}
+a:visited {
+  color: darkturquoise;
+}
+a:hover {
+  color: cyan;
+}
+a:active {
+  color: aquamarine;
+}
+
+p {
+  margin: 0px;
+}
+h1 {
+  margin: 0px;
+}
+h2 {
+  margin: 0px;
+}
+h3 {
+  margin: 0px;
+}
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+body {
+  transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transform-style: preserve-3d;
+}
+table.outer {
+  margin-left: auto;
+  margin-right: auto;
+  left: 176px;
+}
+table.outer td, table.outer th {
+  padding: 10px;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-center {
+  text-align: center;
+}
+table.inner {
+  margin-left: auto;
+  margin-right: auto;
+}
+table.inner td {
+  padding: 0px;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
