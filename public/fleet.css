@@ -1,0 +1,27 @@
+table.fleet, table.fleet th, table.fleet td {
+  background: black;
+  color: white;
+  font-family: "Courier New";
+  font-size: 13px;
+  border-collapse: collapse;
+  border: 1px solid white;
+  padding: 2px;
+  text-align: left;
+}
+.first-column {
+  vertical-align: middle;
+  text-align: center;
+  margin-left: -2.5em;
+  margin-right: -2.5em;  
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
