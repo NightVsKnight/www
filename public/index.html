@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google" content="notranslate">
-    <meta http-equiv="Content-Language" content="en_US">
-    <title>Night Vs Knight</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en_US">
+  <title>Night Vs Knight</title>
 
-    <!-- Google Analytics BEGIN
-      https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet
-    -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-106488046-1', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- Google Analytics END -->
+  <!-- Google Analytics BEGIN
+    https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet
+  -->
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-106488046-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- Google Analytics END -->
 
-    <!-- Firebase BEGIN
-      https://firebase.google.com/docs/web/setup#sdk_imports_and_implicit_initialization
-    - ->
-    <!- - Firebase App is always required and must be first - ->
-    <script src="/__/firebase/5.1.0/firebase-app.js"></script>
+  <!-- Firebase BEGIN
+    https://firebase.google.com/docs/web/setup#sdk_imports_and_implicit_initialization
+  - ->
+  <!- - Firebase App is always required and must be first - ->
+  <script src="/__/firebase/5.1.0/firebase-app.js"></script>
 
-    <!- - Add additional services that you want to use - ->
-    <!- - Comment out (or don't include) services that you don't want to use - ->
-    <script src="/__/firebase/5.1.0/firebase-auth.js"></script>
-    <script src="/__/firebase/5.1.0/firebase-database.js"></script>
-    <script src="/__/firebase/5.1.0/firebase-messaging.js"></script>
-    <script src="/__/firebase/5.1.0/firebase-functions.js"></script>
-    <script src="/__/firebase/5.1.0/firebase-storage.js"></script>
-    <script src="/__/firebase/init.js"></script>
-    <!- - Firebase END -->
+  <!- - Add additional services that you want to use - ->
+  <!- - Comment out (or don't include) services that you don't want to use - ->
+  <script src="/__/firebase/5.1.0/firebase-auth.js"></script>
+  <script src="/__/firebase/5.1.0/firebase-database.js"></script>
+  <script src="/__/firebase/5.1.0/firebase-messaging.js"></script>
+  <script src="/__/firebase/5.1.0/firebase-functions.js"></script>
+  <script src="/__/firebase/5.1.0/firebase-storage.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <!- - Firebase END -->
 
-    <!-- https://code.jquery.com/ -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <!-- https://code.jquery.com/ -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 
-    <style media="screen">
-        body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-        #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-        #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-        #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-        #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-        #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-        #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-        #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-        @media (max-width: 600px) {
-          body, #message { margin-top: 0; background: white; box-shadow: none; }
-          body { border-top: 16px solid #ffa100; }
-        }
+  <!--
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <!- -
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+  -->
+
+  <style media="screen">
+    body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+    #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+    #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+    #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+    #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+    #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+    #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+    #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+    @media (max-width: 600px) {
+      body, #message { margin-top: 0; background: white; box-shadow: none; }
+      body { border-top: 16px solid #ffa100; }
+    }
     audio {
       position: relative;
       z-index: 0;
@@ -74,116 +81,118 @@
     #divKnightFleet {
       right: 100%;
     }
-    </style>
+  </style>
 
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-    <link rel="icon" href="/favicon.png" type="image/x-icon">
-    <meta name="generator" content="Google Web Designer 1.9.0.0619">
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <link href="stars.css" rel="stylesheet" type="text/css">
-    <!-- Android -->
-    <meta name="theme-color" content="#000000">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#000000">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <style type="text/css"></style>
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <meta name="generator" content="Google Web Designer 1.9.0.0619">
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <link href="stars.css" rel="stylesheet" type="text/css">
+  <!-- Android -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <style type="text/css"></style>
 </head>
 <body class="htmlNoPages">
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <div class="clouds"></div>
-    <div class="centered">
-      <table class="outer">
-          <tbody>
-              <tr>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+  <div class="clouds"></div>
+  <div class="centered">
+    <table class="outer">
+      <tbody>
+        <tr>
           <td class="text-align-center" style="vertical-align:top">
             <div id="divNight" onmouseenter="showFleet('divNightFleet')" onmouseleave="showFleet()">
               <div id="divNightInfo">
-                      <a href="https://robertsspaceindustries.com/citizens/night55"><img style="border: 2px turquoise solid; border-radius: 10px; padding: 1px;" src="images/night55.png" width="150" height="150"></a><br>
-                      <a href="https://robertsspaceindustries.com/orgs/RMF">Robot Mafia</a><br>
-                      i7-7700K 4.2GHz<br>
-                      2x16GB DDR4 3000<br>
-                      GTX1080 FTW
+                <a href="https://robertsspaceindustries.com/citizens/night55"><img style="border: 2px turquoise solid; border-radius: 10px; padding: 1px;" src="images/night55.png" width="150" height="150"></a><br>
+                <a href="https://robertsspaceindustries.com/orgs/RMF">Robot Mafia</a><br>
+                i7-7700K 4.2GHz<br>
+                2x16GB DDR4 3000<br>
+                GTX1080 FTW
               </div>
               <div id="divNightFleet" w3-include-html="fleet_night.html"></div><br>
             </div>
-                  </td>
-                  <td>
-                      <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="mailto:NightVsKnight@gmail.com">NightVsKnight@gmail.com</a></b><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="https://discord.me/NightVsKnight">discord.me/NightVsKnight</a></b>
-                      </p>
-                      <br>
-                      <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/channel/UCn8Ds6jeUzjxCPkMApg_koA">youtube.com/channel/UCn8Ds6jeUzjxCPkMApg_koA</a><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitch.tv/Night_Vs_Knight">twitch.com/Night_Vs_Knight</a><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mixer.com/NightVsKnight">mixer.com/NightVsKnight</a>
-                      </p>
-                      <br>
-                      <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://facebook.com/NightVsKnight">facebook.com/NightVsKnight</a><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/NightVsKnight">twitter.com/NightVsKnight</a>
-                      </p>
-                      <br>
-                      <!--
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      <a href="https://reddit.com/u/NightVsKnight">reddit.com/u/NightVsKnight</a><br>
-                      -->
-                      <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://patreon.com/NightVsKnight">patreon.com/NightVsKnight</a>
-                      </p>
-                      <br>
-                      <p>
-                        Sponsors:<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/swooby/fleet-viewer">github.com/swooby/fleet-viewer</a></li><br>
-                        <a href="https://tradecitizen.org">tradecitizen.org</a></li>
+          </td>
+          <td>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="mailto:NightVsKnight@gmail.com">NightVsKnight@gmail.com</a></b><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="https://discord.me/NightVsKnight">discord.me/NightVsKnight</a></b>
+            </p>
+            <br>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://youtube.com/channel/UCn8Ds6jeUzjxCPkMApg_koA">youtube.com/channel/UCn8Ds6jeUzjxCPkMApg_koA</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitch.tv/Night_Vs_Knight">twitch.com/Night_Vs_Knight</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mixer.com/NightVsKnight">mixer.com/NightVsKnight</a>
+            </p>
+            <br>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://facebook.com/NightVsKnight">facebook.com/NightVsKnight</a><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/NightVsKnight">twitter.com/NightVsKnight</a>
+            </p>
+            <br>
+            <!--
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://reddit.com/u/NightVsKnight">reddit.com/u/NightVsKnight</a><br>
+            -->
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://patreon.com/NightVsKnight">patreon.com/NightVsKnight</a>
+            </p>
+            <br>
+            <p>
+              Sponsors:<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/swooby/fleet-viewer">github.com/swooby/fleet-viewer</a></li><br>
+              <a href="https://tradecitizen.org">tradecitizen.org</a></li>
             </p>
             <br>
             <p class="text-align-center">
               <audio id="audioPlayer" controls src="">Audio playback is not supported.</audio><br>
               <ul id="playlist" style="display:none;">
+                <!-- TODO:(pv) Consider using http://www.jplayer.org/ -->
+                <!-- TODO:(pv) Randomize these... -->
                 <li><a href="music/phazein.wav"></a></li>
                 <li><a href="music/SC_PMC_Mind Games_23LUFS.ogg"></a></li>
                 <li><a href="music/SC_DL_Raven_Music_23LUFS.ogg"></a></li>
-                          <li><a href="music/SC_PMC_First Light_23LUFS.ogg"></a></li>
-                          <li><a href="music/SC_PMC_Main_Theme_23LUFS.ogg"></a></li>
-                          <li><a href="music/SC_PMC_600i_v31_24bit_23LUFS.ogg"></a></li>
-                          <li><a href="music/SC_PMC_Majesty of Space_23LUFS.ogg"></a></li>
-                          <li><a href="music/Hero March - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
-                          <li><a href="music/Atomos.mp3"></a></li>
-                          <li><a href="music/Storm is Coming.mp3"></a></li>
-                          <li><a href="music/Into the Void  - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
-                          <!--
-                          <li><a href="music/Majesty of Space - Star Citizen - Pedro Mecedo Camacho.mp3"></a></li>
-                          <li><a href="music/Mission Successful - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
-                          <li><a href="music/Mission Unsuccessful - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
-                          <li><a href="music/Racing - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
-                          <li><a href="music/Star Citizen NOT Main Theme - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
-                          <li><a href="music/Star Citizen Tutorial - Drone Battle.mp3"></a></li>
-                          <li><a href="music/Star Citizen Tutorial - Hangar Intro.mp3"></a></li>
-                          <li><a href="music/Star Citizen Tutorial - Race.mp3"></a></li>
-                          <li><a href="music/Star Citizen Tutorial - Space Intro.mp3"></a></li>
-                          -->
-                        </ul>
-                        <script src="audioPlayer.js"></script>
+                <li><a href="music/SC_PMC_First Light_23LUFS.ogg"></a></li>
+                <li><a href="music/SC_PMC_Main_Theme_23LUFS.ogg"></a></li>
+                <li><a href="music/SC_PMC_600i_v31_24bit_23LUFS.ogg"></a></li>
+                <li><a href="music/SC_PMC_Majesty of Space_23LUFS.ogg"></a></li>
+                <li><a href="music/Hero March - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
+                <li><a href="music/Atomos.mp3"></a></li>
+                <li><a href="music/Storm is Coming.mp3"></a></li>
+                <li><a href="music/Into the Void  - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
+                <!--
+                <li><a href="music/Majesty of Space - Star Citizen - Pedro Mecedo Camacho.mp3"></a></li>
+                <li><a href="music/Mission Successful - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
+                <li><a href="music/Mission Unsuccessful - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
+                <li><a href="music/Racing - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
+                <li><a href="music/Star Citizen NOT Main Theme - Star Citizen - Pedro Macedo Camacho.mp3"></a></li>
+                <li><a href="music/Star Citizen Tutorial - Drone Battle.mp3"></a></li>
+                <li><a href="music/Star Citizen Tutorial - Hangar Intro.mp3"></a></li>
+                <li><a href="music/Star Citizen Tutorial - Race.mp3"></a></li>
+                <li><a href="music/Star Citizen Tutorial - Space Intro.mp3"></a></li>
+                -->
+              </ul>
+              <script src="audioPlayer.js"></script>
               <div class="text-align-center" style="font-size: x-small">Music by <a href="https://robertsspaceindustries.com/musicdownload">RSI</a> and <a href="https://soundcloud.com/luke-cypert/sets/star-citizen-official-1">PMC</a></div>
             </p>
-                  </td>
+          </td>
           <td class="text-align-center" style="vertical-align:top">
             <div id="divKnight" onmouseenter="showFleet('divKnightFleet')" onmouseleave="showFleet()">
               <div id="divKnightFleet" w3-include-html="fleet_knight.html"></div>
               <div id="divKnightInfo">
-                      <a href="https://robertsspaceindustries.com/citizens/knight55"><img style="border: 2px turquoise solid; border-radius: 10px; padding: 1px;" src="images/knight55.png" width="150" height="150"></a><br>
-                      <a href="https://robertsspaceindustries.com/orgs/PXP">Planet Express Crew</a><br>
-                      i7-6700K 4.0GHz<br>
-                      2x16GB DDR4 2133<br>
-                      GTX1080 Founders
+                <a href="https://robertsspaceindustries.com/citizens/knight55"><img style="border: 2px turquoise solid; border-radius: 10px; padding: 1px;" src="images/knight55.png" width="150" height="150"></a><br>
+                <a href="https://robertsspaceindustries.com/orgs/PXP">Planet Express Crew</a><br>
+                i7-6700K 4.0GHz<br>
+                2x16GB DDR4 2133<br>
+                GTX1080 Founders
               </div>
             </div>
-                  </td>
-              </tr>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -248,28 +257,28 @@
   </script>
   <!--
   <p id="load">Firebase SDK Loading&hellip;</p>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+      // // The Firebase SDK is initialized and available here!
+      //
+      // firebase.auth().onAuthStateChanged(user => { });
+      // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+      // firebase.messaging().requestPermission().then(() => { });
+      // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+      //
+      // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-    -->
+      try {
+        let app = firebase.app();
+        let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+      } catch (e) {
+        console.error(e);
+        document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+      }
+    });
+  </script>
+  -->
 </body>
 </html>
